@@ -3,66 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>TaoVertex</title>
-
 <style>
-body{
-    margin:0;
-    background:#0f172a;
-    color:#fff;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    text-align:center;
-}
-
-.container{
-    max-width:700px;
-    padding:40px;
-}
-
-h1{
-    font-size:56px;
-    margin-bottom:12px;
-    letter-spacing:2px;
-}
-
-p{
-    color:#94a3b8;
-    font-size:18px;
-    line-height:1.8;
-}
-
-footer{
-    margin-top:60px;
-    color:#64748b;
-    font-size:14px;
-}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#050816;color:#fff}
+body{display:flex;align-items:center;justify-content:center;overflow:hidden}
+body::before{content:"";position:fixed;inset:-20%;background:radial-gradient(circle at 50% 18%,rgba(70,120,255,.18),transparent 32%),radial-gradient(circle at 82% 78%,rgba(147,51,234,.16),transparent 34%),radial-gradient(circle at 18% 72%,rgba(34,211,238,.10),transparent 30%);filter:blur(4px);z-index:0}
+.wrap{position:relative;z-index:1;width:100%;max-width:980px;padding:56px 24px;text-align:center}
+.logo{width:min(360px,72vw);margin:0 auto 26px;display:block;filter:drop-shadow(0 22px 42px rgba(37,99,235,.18))}
+h1{font-size:clamp(46px,8vw,92px);line-height:1;margin:0 0 24px;letter-spacing:.06em;font-weight:800;background:linear-gradient(90deg,#fff,#dbeafe,#a78bfa,#67e8f9);-webkit-background-clip:text;color:transparent}
+.tagline{font-size:clamp(20px,3.2vw,34px);letter-spacing:.04em;color:#dbeafe;margin:0 0 22px;font-weight:500}
+.principle{font-size:clamp(17px,2.4vw,24px);letter-spacing:.08em;color:#94a3b8;margin:0}
+.line{width:72px;height:1px;margin:38px auto;background:linear-gradient(90deg,transparent,#60a5fa,#a78bfa,transparent)}
+footer{color:#64748b;font-size:14px;letter-spacing:.08em}
+@media(max-width:640px){.wrap{padding:36px 20px}.logo{width:78vw;margin-bottom:18px}h1{letter-spacing:.03em}.line{margin:30px auto}}
 </style>
 </head>
-
 <body>
-
-<div class="container">
-
-<h1>TaoVertex</h1>
-
-<p>
-Beyond Technology.
-</p>
-
-<p>
-Official website is currently under construction.
-</p>
-
-<footer>
-© 2026 TaoVertex
-</footer>
-
-</div>
-
+<main class="wrap">
+  <img class="logo" src="logo.png" alt="TaoVertex logo">
+  <h1>TaoVertex</h1>
+  <p class="tagline">Life with AI.</p>
+  <p class="principle">Create. Improve. Simplify.</p>
+  <div class="line"></div>
+  <footer>© 2026 TaoVertex</footer>
+</main>
 </body>
 </html>
